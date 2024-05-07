@@ -12,37 +12,76 @@
         </Style>
     </Page.Resources>
     <Grid>
-        
+
         <StackPanel Margin="20">
-            <TextBlock Text="Choose a Cocktail Recipe!" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="Choose a Cocktail Recipe!" Foreground="AliceBlue" Background="DarkCyan" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" HorizontalAlignment="Center"/>
             <Button Content="PassionFruit Martini" Click="ViewPassion_Click" Width="150" Height="50"/>
             <Button Content="Cosmopolitan" Click="ViewCosmo_Click" Width="150" Height="50"/>
             <Button Content="Old Fashioned" Click="ViewFash_Click" Width="150" Height="50"/>
         </StackPanel>
         <!-- Define the Popup -->
         <Popup x:Name="Passion" Placement="Center" IsOpen="{Binding IsPopupOpen, Mode=TwoWay}">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="1000" Height="500">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="500" Height="500">
                 <StackPanel>
                     <TextBlock Text="Passionfruit Martini" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Image Source="/CocktailApp;component/Images/Passion.jpeg" Width="900" Height="450"/>
+                    <Image Source="/CocktailApp;component/Images/Passion.jpeg" Width="500" Height="250" HorizontalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center">
+                        Ingredients: <LineBreak/>
+                        - 40ml Smirnoff <LineBreak/>
+                        - 20ml Sugar Syrup <LineBreak/>
+                        - 10ml Passionfruit Puree <LineBreak/>
+                        - 40ml Orange Juice <LineBreak/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap">
+                        Step 1: Fill the Coupe Glass with Ice. <LineBreak/>
+                        Step 2: Pour all ingredients in tins, half fill with ice, shake for 15 times. <LineBreak/>
+                        Step 3: Remove Ice from glass and double strain. <LineBreak/>
+                        Step 4: Garnish with dehydrated passionfruit <LineBreak/>
+                    </TextBlock>
                     <ToggleButton Content="Close" Click="ClosePassion_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
         </Popup>
         <Popup x:Name="Cosmo" Placement="Center" IsOpen="{Binding IsPopupOpen, Mode=TwoWay}">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="200" Height="100">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="500" Height="500">
                 <StackPanel>
                     <TextBlock Text="Cosmopolitan" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Image Source="/CocktailApp;component/Images/Cosmo.jpeg" Width="50" Height="50"/>
+                    <Image Source="/CocktailApp;component/Images/Cosmo.jpeg" Width="500" Height="250"/>
+                    <TextBlock HorizontalAlignment="Center">
+                        Ingredients: <LineBreak/>
+                        - 40ml Smirnoff <LineBreak/>
+                        - 20ml Cointreau <LineBreak/>
+                        - 30ml Lime Juice <LineBreak/>
+                        - 20ml Cranberry Juice <LineBreak/>    
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap">
+                        Step 1: Fill the Coupe Glass with Ice. <LineBreak/>
+                        Step 2: Pour all ingredients in tins, half fill with ice, shake for 15 times. <LineBreak/>
+                        Step 3: Fine Strain (No ice in the glass). <LineBreak/>
+                        Step 4: Garnish with lime zest. <LineBreak/>   
+                    </TextBlock>
                     <ToggleButton Content="Close" Click="CloseCosmo_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
         </Popup>
         <Popup x:Name="Fash" Placement="Center" IsOpen="{Binding IsPopupOpen, Mode=TwoWay}">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="200" Height="100">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="500" Height="500">
                 <StackPanel>
                     <TextBlock Text="Old Fashioned" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Image Source="/CocktailApp;component/Images/Fash.jpeg" Width="50" Height="50"/>
+                    <Image Source="/CocktailApp;component/Images/Fash.jpeg" Width="500" Height="250"/>
+                    <TextBlock HorizontalAlignment="Center">
+                        Ingredients: <LineBreak/>
+                        - 1 teaspoon White Sugar <LineBreak/>
+                        - 3 dashes Angostura Bitters <LineBreak/>
+                        - 10ml Water <LineBreak/>
+                        - 60ml Bourbon <LineBreak/>    
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap">
+                        Step 1: Put Sugar in rocks glass and soak with bitters, adding water. <LineBreak/>
+                        Step 2: Stir well and fill glass with ice. <LineBreak/>
+                        Step 3: Add Bourbon and stir for 15 times. <LineBreak/>
+                        Step 4: Garnish with slice of orange on cherry. <LineBreak/>
+                    </TextBlock>
                     <ToggleButton Content="Close" Click="CloseFash_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>

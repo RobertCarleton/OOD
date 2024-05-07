@@ -1,7 +1,5 @@
 C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\CocktailApp.csproj.AssemblyReference.cache
-C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\RecipesPage.baml
 C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\HomePage.baml
-C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\RecipesPage.g.cs
 C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\HomePage.g.cs
 C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\MainWindow.g.cs
 C:\Users\Robert C\Documents\GitHub\OOD\CocktailApp\CocktailApp\obj\Debug\App.g.cs
