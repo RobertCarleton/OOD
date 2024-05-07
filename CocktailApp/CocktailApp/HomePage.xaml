@@ -12,17 +12,19 @@
         </Style>
     </Page.Resources>
     <Grid>
+        
         <StackPanel Margin="20">
-            <TextBlock Text="Welcome to Cocktail Recipe App!" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="Choose a Cocktail Recipe!" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
             <Button Content="PassionFruit Martini" Click="ViewPassion_Click" Width="150" Height="50"/>
             <Button Content="Cosmopolitan" Click="ViewCosmo_Click" Width="150" Height="50"/>
             <Button Content="Old Fashioned" Click="ViewFash_Click" Width="150" Height="50"/>
         </StackPanel>
         <!-- Define the Popup -->
         <Popup x:Name="Passion" Placement="Center" IsOpen="{Binding IsPopupOpen, Mode=TwoWay}">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="200" Height="100">
+            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="1000" Height="500">
                 <StackPanel>
                     <TextBlock Text="Passionfruit Martini" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="/CocktailApp;component/Images/Passion.jpeg" Width="900" Height="450"/>
                     <ToggleButton Content="Close" Click="ClosePassion_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
@@ -31,6 +33,7 @@
             <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="200" Height="100">
                 <StackPanel>
                     <TextBlock Text="Cosmopolitan" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="/CocktailApp;component/Images/Cosmo.jpeg" Width="50" Height="50"/>
                     <ToggleButton Content="Close" Click="CloseCosmo_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
@@ -39,6 +42,7 @@
             <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="200" Height="100">
                 <StackPanel>
                     <TextBlock Text="Old Fashioned" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="/CocktailApp;component/Images/Fash.jpeg" Width="50" Height="50"/>
                     <ToggleButton Content="Close" Click="CloseFash_Click" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Border>
